@@ -3,13 +3,13 @@ import React, { useState } from 'react'; // Import useState hook
 
 // Product data (This will eventually come from an API)
 const product = {
-  id: 'book-101',
+  id: 'book-808',
   imageUrl: 'https://placehold.co/400x500/E0F2F7/2C3E50?text=Book+Cover', // Placeholder image URL
-  title: 'The Great Software Workflow Guide from Miss Dewi',
+  title: 'The Great Software Workflow Guide',
   description: 'A comprehensive guide to mastering efficient software development workflows, including version control, GitHub, build images, and RESTful API design. Learn best practices for modern software engineering.',
-  price: 599,
+  price: 908,
   currency: '$',
-  stock: 100,
+  stock: 2025,
 };
 
 // Component for displaying the product image
