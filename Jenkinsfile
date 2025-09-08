@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t Sophia202407/ecommerce-product-page .'
+                bat 'docker build -t sophia514/ecommerce-product-page .'
             }
         }
 
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) {
                     bat 'docker login -u %DOCKER_USERNAME% -p %DOCKER_PASSWORD%'
-                    bat 'docker push Sophia202407/ecommerce-product-page'
+                    bat 'docker push sophia514/ecommerce-product-page'
                 }
             }
         }
