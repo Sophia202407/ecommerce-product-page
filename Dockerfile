@@ -32,6 +32,6 @@
 # # Command to run Nginx when the container starts
 # CMD ["nginx", "-g", "daemon off;"]
 
-// new Dockerfile for the class demo of CI/CD pipeline on Sep.8
+# // new Dockerfile for the class demo of CI/CD pipeline on Sep.8
 FROM nginx:alpine
 COPY . /usr/share/nginx/html
